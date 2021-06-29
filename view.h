@@ -4,6 +4,7 @@
 #include "point.h"
 #include <list>
 #include <QtGui>
+#include <QGraphicsView>
 #include <iostream>
 
 

@@ -1,11 +1,15 @@
 #include "application.h"
-#include "image.h"
+//#include "image.h"
+#include "./ui_application.h"
 #include "itkThresholdImageFilter.h"
 #include "stuffs.h"
 
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QGraphicsBlurEffect>
 
 
-Application::Application(QWidget *parent, Qt::WFlags flags):QMainWindow(parent, flags)
+Application::Application(QWidget *parent, Qt::WindowFlags flags):QMainWindow(parent, flags)
 {
 	ui.setupUi(this);
 

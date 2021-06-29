@@ -10,6 +10,7 @@
 //#include "itkGradientImageFilter.h"
 
 #include <QtGui>
+#include <QFlags>
 
 
 //typedef unsigned char						UnsignedCharPixelType;
@@ -27,7 +28,7 @@ class Application : public QMainWindow
 	Q_OBJECT
 
 public:	
-	Application(QWidget *parent = 0, Qt::WFlags flags = 0);
+    Application(QWidget *parent = 0, Qt::WindowFlags flags = 0);
 	~Application();
 	//void paintEvent(QPaintEvent*);
 private slots:

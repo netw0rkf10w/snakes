@@ -4,7 +4,7 @@
 #define SNAKE_H
 
 #include <QImage>
-#include "/media/Khue/Dev. Software/C++libraries/boost/boost/utility.hpp"
+//#include "/media/Khue/Dev. Software/C++libraries/boost/boost/utility.hpp"
 #include <list>
 #include "point.h"
 #include <math.h>
