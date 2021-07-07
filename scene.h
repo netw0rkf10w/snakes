@@ -5,7 +5,15 @@
 #include <list>
 #include <QtGui>
 #include <iostream>
-#include "/media/Khue/Dev. Software/C++libraries/boost/boost/utility.hpp"
+//#include "/media/Khue/Dev. Software/C++libraries/boost/boost/utility.hpp"
+#include <boost/utility.hpp>
+#include <boost/fusion/iterator/prior.hpp>
+#include <boost/fusion/iterator/next.hpp>
+#include <boost/fusion/include/prior.hpp>
+#include <boost/fusion/include/next.hpp>
+
+#include <QGraphicsScene>
+#include <QGraphicsSceneMouseEvent>
 
 typedef std::list<Point> PointList;
 

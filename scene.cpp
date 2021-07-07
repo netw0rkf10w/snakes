@@ -40,13 +40,13 @@ void Scene::drawLine(PointList points)
 	for(i=points.begin();i!=points.end();i++)
 	{
         addRect(i->getX()-2,i->getY()-2,4,4,pen);//addEllipse(i->getX()-2,i->getY()-2,4,4,pen);
-        if(i==boost::prior(points.end()))
+        if(i==prev(points.end()))
         {
             this->addLine(i->getX(),i->getY(),points.begin()->getX(),points.begin()->getY(),pen);
         }
         else
         {
-            this->addLine(boost::next(i)->getX(),boost::next(i)->getY(),i->getX(),i->getY(),pen);
+            this->addLine(next(i)->getX(),next(i)->getY(),i->getX(),i->getY(),pen);
         }
 	}
 }
@@ -64,7 +64,7 @@ void Scene::drawLineWithSP(PointList points)
         else
         {
             addRect(i->getX()-2,i->getY()-2,4,4,pen);//addEllipse(i->getX()-2,i->getY()-2,4,4,pen);
-            this->addLine(boost::prior(i)->getX(),boost::prior(i)->getY(),i->getX(),i->getY(),pen);
+            this->addLine(prev(i)->getX(),prev(i)->getY(),i->getX(),i->getY(),pen);
         }
 
     }
@@ -112,7 +112,7 @@ void Scene::drawLine(PointList points,QColor color)
         else
         {
             addEllipse(i->getX()-2,i->getY()-2,4,4,pen);
-            this->addLine(boost::prior(i)->getX(),boost::prior(i)->getY(),i->getX(),i->getY(),pen);
+            this->addLine(prev(i)->getX(),prev(i)->getY(),i->getX(),i->getY(),pen);
         }
 
     }
